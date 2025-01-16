@@ -29,4 +29,16 @@ func main() {
     
     fmt.Println("\n9. Slices")
     slicesDs()
+
+    fmt.Println("\n10. Maps")
+    mapsDs()
+
+    fmt.Println("\n11. Functions")
+    functions()
+
+    fmt.Println("\n12. Multiple Return Values")
+    mulitpleRetValues()
+
+    fmt.Println("\n13. Variadic Functions")
+    variadicFunctions()
 }
