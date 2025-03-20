@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"math/cmplx"
 )
 
@@ -29,4 +30,23 @@ func main() {
 	fmt.Printf("Type: %T Value: %v\n", ToBe, ToBe)
 	fmt.Printf("Type: %T Value: %v\n", MaxInt, MaxInt)
 	fmt.Printf("Type: %T Value: %v\n", z, z)
+
+	/* Zero values */
+	var i int
+	var f float64
+	var b bool
+	var s string
+
+	fmt.Println(i, f, b, s)
+
+	/* T(v) converts the value v to the type T. */
+	var x, y int = 3, 5
+	var f2 float64 = math.Sqrt(float64(x*x + y*y))
+	var u uint = uint(f)
+
+	fmt.Println(x, y, f2, u)
+
+	/* Type Inference */
+	v := 45
+	fmt.Printf("v is of type %T", v)
 }
